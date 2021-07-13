@@ -1,7 +1,7 @@
 /*
  * @Author: 
  * @Date: 2021-05-28 16:51:00
- * @LastEditTime: 2021-07-13 14:31:20
+ * @LastEditTime: 2021-07-13 17:31:34
  * @LastEditors: Please set LastEditors
  * @Description:  
  */
@@ -12,8 +12,11 @@ import './App.css';
 // import Main4 from "./components/communication/main4.js"
 // import Main3 from "./components/communication/main3.js"
 // import Main1 from "./components/life/main1.js"
-import Main1 from "./components/ref/main1.js"
+// import Main1 from "./components/ref/main1.js"
+// import Main from "./components/ref/main2.js"
+// import Main from "./components/HOC/main1.js"
 import React from 'react';
+// import Main1 from './components/ref/main1.js';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -24,8 +27,8 @@ class App extends React.Component {
   render () {
     return (
       <div className="App">
-        {/* <Header name={"汪苏泷"} age={18} /> */}
         {/* 父子通信 */}
+        {/* <Header name={"汪苏泷"} age={18} /> */}
         {/* <Main fatherFn={this.myFn} /> */}
         {/* <Main2></Main2> */}
         {/* <Main3/> */}
@@ -38,7 +41,14 @@ class App extends React.Component {
         }}>父按钮</button> */}
 
         {/* ref */}
-        <Main1/>
+        {/* <Main1/> */}
+        {/* <Main /> */}
+
+        {/* 高阶组件(省略了一部分 具体看文档) */}
+        {/* <Main /> */}
+
+        
+        {/* router路由部分 */}
       </div>
 
     );
