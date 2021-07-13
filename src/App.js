@@ -1,7 +1,7 @@
 /*
  * @Author: 
  * @Date: 2021-05-28 16:51:00
- * @LastEditTime: 2021-07-13 10:15:28
+ * @LastEditTime: 2021-07-13 14:31:20
  * @LastEditors: Please set LastEditors
  * @Description:  
  */
@@ -11,7 +11,8 @@ import './App.css';
 // import Main2 from "./components/communication/main2.js"
 // import Main4 from "./components/communication/main4.js"
 // import Main3 from "./components/communication/main3.js"
-import Main1 from "./components/life/main1.js"
+// import Main1 from "./components/life/main1.js"
+import Main1 from "./components/ref/main1.js"
 import React from 'react';
 class App extends React.Component {
   constructor(props) {
@@ -31,10 +32,13 @@ class App extends React.Component {
         {/* <Main4/> */}
 
         {/* 生命周期 */}
-        <div>{this.state.flag && <Main1 name={"汪苏泷"} age={18}></Main1>}</div>
+        {/* <div>{this.state.flag && <Main1 name={"汪苏泷"} age={18}></Main1>}</div>
         <button onClick={() => {
           this.change()
-        }}>父按钮</button>
+        }}>父按钮</button> */}
+
+        {/* ref */}
+        <Main1/>
       </div>
 
     );
