@@ -1,7 +1,7 @@
 /*
  * @Author: 
  * @Date: 2021-05-28 16:51:00
- * @LastEditTime: 2021-07-13 17:31:34
+ * @LastEditTime: 2021-07-14 13:53:44
  * @LastEditors: Please set LastEditors
  * @Description:  
  */
@@ -17,6 +17,8 @@ import './App.css';
 // import Main from "./components/HOC/main1.js"
 import React from 'react';
 // import Main1 from './components/ref/main1.js';
+import Main from './components/router/main1.js';
+import {BrowserRouter} from 'react-router-dom';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -47,8 +49,12 @@ class App extends React.Component {
         {/* 高阶组件(省略了一部分 具体看文档) */}
         {/* <Main /> */}
 
-        
+
         {/* router路由部分 */}
+        {/* 包括路由 */}
+        <BrowserRouter>
+          <Main />
+        </BrowserRouter>
       </div>
 
     );
